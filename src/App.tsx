@@ -11,10 +11,11 @@ function App() {
   const selectedVersion = appConfig[version];
 
   return (
-    <div className={`h-screen ${version == "v2" && darkMode && "dark"}`}>
-      {selectedVersion.DarkMode && <selectedVersion.DarkMode />}
+    <div className={`h-screen ${version !== "v1" && darkMode && "dark"}`}>
       <Header />
-      <selectedVersion.RegistrationForm />
+      {selectedVersion.DarkMode && <selectedVersion.DarkMode />}
+      {selectedVersion.RegistrationForm && <selectedVersion.RegistrationForm />}
+      {selectedVersion.PlayGround && <selectedVersion.PlayGround />}
     </div>
   );
 }

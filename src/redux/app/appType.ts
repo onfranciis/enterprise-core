@@ -1,4 +1,6 @@
-export type IVersion = "v1" | "v2";
+import { versions } from "../../components/Header";
+
+export type IVersion = (typeof versions)[number];
 
 export interface AppInitialState {
   version: IVersion;

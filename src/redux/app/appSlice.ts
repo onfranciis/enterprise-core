@@ -7,7 +7,7 @@ import {
 
 const initialState: AppInitialState = {
   version: "v1",
-  darkMode: true,
+  darkMode: false,
 };
 
 export const appSlice = createSlice({

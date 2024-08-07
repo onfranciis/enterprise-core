@@ -5,7 +5,7 @@ import { IVersion } from "../redux/app/appType";
 import store from "../redux/store";
 const { getState } = store;
 
-const versions: IVersion[] = ["v1", "v2"];
+export const versions = ["v1", "v2", "v3"] as const;
 
 const Header = () => {
   const dispatch = useDispatch();

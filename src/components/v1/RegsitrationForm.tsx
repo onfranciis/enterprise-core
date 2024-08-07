@@ -9,7 +9,7 @@ const RegistrationFormV1 = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center text-white font-bold mt-10">
+    <div className="flex flex-col items-center justify-center text-white font-bold my-10">
       <p className=" text-violet-500 text-4xl mb-6 mt-10">Registration V1</p>
 
       <form
